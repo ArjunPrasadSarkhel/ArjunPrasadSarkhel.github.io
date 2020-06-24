@@ -1,0 +1,192 @@
+body
+{
+    margin: auto 0;
+}
+/*.animate__animated.animate__flipInY {
+  --animate-duration: 2.5s;
+  --animate-delay: 2s;
+}*/
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;*/
+   /* cursor:pointer;*/
+    /*display:inline-block;*/
+    color:#FFF;
+    font-size:1.5em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+/*NAV*/
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    font=size: 0.7em;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+.push
+{
+    margin-left: auto;
+}
+li
+{
+    padding: 20px;
+}
+a{
+    color: #f5f5f6;
+    text-decoration: none;
+}
+/*cover style*/
+.coverpage
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*height: 80vh;*/
+}
+h1{
+    font-family: 'Krona One', sans-serif;
+    font-size: 2em;
+    text-shadow: 2px 2px #2a2626;
+    position: absolute;
+}
+h3{
+    font-size: 1em;
+    color: #070909;
+    font-family: 'Francois One', sans-serif;
+}
+.paraclass
+{
+    color:#5F6767;
+}
+@media only screen and (max-width: 600px)
+{
+    h1{
+        font-size: 1em;
+        text-shadow: 1px 1px #2a2626;
+        padding: 0;
+    }
+}
+.background-container{
+    background-image: url('https://stxnext.com/media/filer_public/13/84/13841949-9a68-42f7-98a8-2037bda88d3f/machine-learning-applications-header.png');
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 20% 0;
+}
+/*GRID*/
+
+
+.grid-wrapper{
+    padding: 40px 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 30px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+}
+.image-big{
+    transition: transform .5s;
+}
+.image-big:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(to bottom, #ffffff, #f7fcff, #e5fcff, #cefdff, #bafeff, #b0fefe, #a5fffc, #9afffa, #96fff9, #93fff9, #8ffff8, #8bfff7);
+}
+.btn
+{
+ background-color: #007FC2;
+ padding: 15px 15px;
+ border-radius: 300px;
+ display: flex;
+ justify-content: center;
+}
+
+.btn-xl{
+    padding: 1rem 2rem;
+}
+footer{
+    text-align: center;
+}
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+/*DIFF BLUE*/
+.diff-blue{
+    background-image: linear-gradient(to bottom, #00c8ff, #29d3ff, #45deff, #5de8ff, #74f2ff, #88f6fe, #9afbfe, #abfffe, #bcfffd, #cbfffd, #d9fffd, #e7fffd);;
+}
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background-image: linear-gradient(to bottom, #ffffff, #f7fcff, #e5fcff, #cefdff, #bafeff, #b0fefe, #a5fffc, #9afffa, #96fff9, #93fff9, #8ffff8, #8bfff7);
+}
